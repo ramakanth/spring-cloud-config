@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RefreshScope
 public class WelcomeController {
-	@Value("${app.service-name}")
+	@Value("${app.service.name}")
     private String serviceName;
 
     @Value("${app.shared.attribute}")
