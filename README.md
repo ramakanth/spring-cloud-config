@@ -4,18 +4,30 @@
 
 Testing URL:
 
-http://localhost:9091/employee-service/default 
+GET :  http://localhost:9091/employee-service/default 
 
-http://localhost:9092/department-service/default 
+GET :  http://localhost:9092/department-service/default 
 
-http://localhost:9091/actuator/refresh 
+GET :  http://localhost:9091/service
 
-http://localhost:9092/actuator/refresh 
+GET :  http://localhost:9091/shared
 
-http://localhost:9091/service
+GET :  http://localhost:9092/service
 
-http://localhost:9091/shared
+GET :  http://localhost:9092/shared
 
-http://localhost:9092/service
+Change the properties in department and employee and application properties then hit the below URL
 
-http://localhost:9092/shared
+POST :  http://localhost:9091/actuator/refresh 
+
+POST :  http://localhost:9092/actuator/refresh 
+
+GET :  http://localhost:9091/service
+
+GET :  http://localhost:9091/shared
+
+GET :  http://localhost:9092/service
+
+GET :  http://localhost:9092/shared
+
+
