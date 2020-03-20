@@ -19,6 +19,10 @@ public class WelcomeController {
     public String getServiceName() {
         return "service name [" + this.serviceName + "]";
     }
+    @GetMapping("/greeting")
+    public String greeting() {
+        return "Wish you happy birth day";
+    }
 
 
     @GetMapping("/shared")
